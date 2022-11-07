@@ -1,0 +1,208 @@
+@font-face{
+    font-family:'hcom-icons';
+    src:url("../fonts/hcom-icons.woff2") format("woff2"),
+    url("../fonts/hcom-icons.ttf") format("truetype"),
+    url("../fonts/hcom-icons.woff") format("woff"),
+    url("../fonts/hcom-icons.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:fallback;
+    font-display:block
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family:inherit;
+    vertical-align:baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block
+}
+
+body {
+    line-height:1;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    color: #333333;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+/***** SECTION HOTEL HEAD ****/
+.head {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.head h1 {
+    display: inline;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #1a1c1b;
+}
+
+.head span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #d32f2f;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.h_option {
+    margin-top: 8px;
+}
+
+.h_option_list {
+    margin-bottom: -12px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.h_option_list span {
+    text-decoration: underline dotted;
+}
+
+.h_option_list li._wifi span {
+    text-decoration: none;
+}
+
+.h_option_list li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.h_option_list li::before {
+    font-family: "hcom-icons";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.h_option_list li._wifi {
+    color: #218242;
+}
+
+.h_option_list li._wifi::before{
+    content: "\E9B5";
+}
+
+.h_option_list li._stamp {
+    color: #7b1fa2;
+    cursor: pointer;
+}
+
+.h_option_list li._stamp::before{
+    content: "\E927";
+}
+
+.h_option_list li._waruntee {
+    color: #063665;
+    cursor: pointer;
+}
+
+.h_option_list li._waruntee::before{
+    content: "\E906";
+}
+
+/***** SECTION HOTEL WARNING ****/
+._hwarning {
+    margin-top: 28px;
+}
+
+._hwarning h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #1a1c1b;
+    margin-bottom: 8px;
+}
+
+._hwarning article {
+    background-color: #fcf2c5;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+._hwarning p {
+    line-height: 20px;
+}
+
+/**** SECTION HOTEL IMAGE ***/
+
+._himage img {
+    max-width: 100%;
+    margin-top: 18px;
+    border-radius: 5px;
+}
+
+/**** Content ****/
+
+.main {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+.content::before {
+    border-top: 1px solid #e6e6e6;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    content: '';
+}
+
+.content h2 {
+    font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 26px;
+    font-weight: 700;
+    color: #1a1c1b;
+}
+
+
+.list {
+    columns: 3;
+    column-width: 300px;
+}
+
+.list h3 {
+    margin-bottom: 8px;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #1a1c1b;
+}
+
+.list ul li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.list li::before {
+    font-family: "hcom-icons";
+    left: 0;
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    content: '\E917';
+}
+
+.hilight li::before {
+    content: '\E9B5';
+}
